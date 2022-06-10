@@ -111,7 +111,12 @@ select:focus {
     border: none;
     outline: 0;
 }
-
+input[type="email"]{
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
 .placeholder {
     color: #999999;
 }
@@ -183,13 +188,12 @@ img {
 }
 
 .button-normal {
-    font-family: 'oswald_regularregular';
+    /* font-family: 'oswald_regularregular'; */
     display: inline-block;
-    padding: 15px 30px;
-    margin-top: 30px;
-    letter-spacing: .5px;
+    padding: 7px 25px;
+    margin-top: 20px;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
@@ -199,6 +203,7 @@ img {
     -o-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    border-radius: 10px;
 }
 
 .button-normal.yellow {
@@ -1511,4 +1516,8 @@ ul.menus li.has-child ul.child li a:hover:after {
     object-fit: contain;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+}
+.cont{
+   margin-right: 10%;
+   padding: 23% 0 20% 0;
 }
