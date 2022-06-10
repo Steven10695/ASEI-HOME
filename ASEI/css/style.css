@@ -118,7 +118,7 @@ input[type="email"]{
     border-radius: 10px;
 }
 .placeholder {
-    color: #999999;
+    color: ##9C9C9C;
 }
 
 h1,
@@ -196,7 +196,6 @@ img {
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
-    text-transform: uppercase;
     will-change: opacity, transform;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -207,8 +206,8 @@ img {
 }
 
 .button-normal.yellow {
-    background-color: #ffc815;
-    color: #000000;
+    background-color: #DB9500;
+    color: #fff;
 }
 
 .button-normal.white {
@@ -222,9 +221,101 @@ img {
     color: #ffffff;
 }
 
+.flex-control-thumbs{
+    display: none;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*  2. LAYOUT
 /*-----------------------------------------------------------------------------------*/
+
+.seccion-2{
+    padding: 40px 146px;
+    background-color: #00244F;
+}
+
+.textos{
+    padding-top: 30px;
+}
+
+.seccion-2 .textos h4{
+    font-size: 35px;
+    font-weight: 400;
+    color: #FBFBFB;
+    text-transform: uppercase;
+}
+
+.seccion-2 .textos p{   
+    font-weight: 400;
+    font-size: 15px;
+    color: #FBFBFB;
+}
+
+.card img{
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body{
+    background-color: #ffc815;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-text{
+    color: #FBFBFB;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  2. SECCION 2
+/*-----------------------------------------------------------------------------------*/
+
+.seccion-3{
+    margin-top: 120px;
+}
+
+.img-seccion3{
+    padding: 0;
+}
+
+.img-seccion3 img{
+    height: 548px;
+}
+
+.textos-seccion3{
+    background-color: #00244F;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 12px 12px 0;
+    padding: 78.5px 40px
+}
+
+.textos-seccion3 h2{
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FBFBFB;
+}
+
+.textos-seccion3 p{
+    font-weight: 400;
+    font-size: 15px;
+    color: #FBFBFB;
+}
+
+.textos-seccion3 img{
+    padding-top: 20px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  2. NOVEDADES
+/*-----------------------------------------------------------------------------------*/
+
+.novedades{
+    margin-top: 120px;
+}
+
+
 .wrapper {
     padding: 100px 0;
     overflow: hidden;
@@ -597,21 +688,32 @@ ul.menus li.has-child ul.child li a:hover:after {
 
 /* 4b. Slider Form*/
 .form-wrap {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
+    background-color: #D3D3D3;
+    padding: 32px 37px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
 }
 
 .slider-form input,
+.slider-form select,
 .slider-form textarea {
     background-color: #ffffff;
     padding: 0 15px;
     width: 100%;
     height: 45px;
     border: none;
+    border-radius: 12px;
     margin-bottom: 10px;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+}
+
+.slider-form h4{
+    color: #00244F;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: start;
 }
 
 .slider-form form textarea {
@@ -623,7 +725,7 @@ ul.menus li.has-child ul.child li a:hover:after {
 /*  5. CONTENT
 /*-----------------------------------------------------------------------------------*/
 #content.homepage {
-    margin-top: 120px;
+    margin-top: 110px;
 }
 
 .grey-bg {
@@ -677,7 +779,7 @@ ul.menus li.has-child ul.child li a:hover:after {
     color: #000000;
 }
 
-.title:after {
+/* .title:after {
     content: "";
     background: url(../img/title-separator.png);
     position: absolute;
@@ -689,7 +791,7 @@ ul.menus li.has-child ul.child li a:hover:after {
     left: 0;
     right: 0;
     bottom: 18px;
-}
+} */
 
 .title.text-left:after {
     margin: 0;
@@ -1175,10 +1277,12 @@ ul.menus li.has-child ul.child li a:hover:after {
 }
 
 .form form input,
+.form form select,
 .form form textarea {
     background-color: #f8f8f8;
     padding: 0 15px;
     width: 100%;
+    border-radius: 12px;
     height: 45px;
     border: none;
     margin-bottom: 10px;
