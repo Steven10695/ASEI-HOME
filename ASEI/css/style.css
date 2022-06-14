@@ -1625,3 +1625,7 @@ ul.menus li.has-child ul.child li a:hover:after {
    margin-right: 10%;
    padding: 23% 0 20% 0;
 }
+.modal-vertical{
+    top:15%;
+    vertical-align: middle;
+}
