@@ -20,9 +20,11 @@
     <link rel="stylesheet" href="css/plugin.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
@@ -106,120 +108,83 @@
             </div>
         </header>
         <!-- HEADER END -->
+        <!-- BUSCADOR -->
+        <section class="buscador">
+            <div class="container-fluid">
+                <div class="row align-items-center">
 
-        <!-- SLIDER START
-            ============================================= -->
-        <section id="slider" class="flexslider-wrap fullscreen clearfix">
-            <div class="flexslider clearfix">
-                <ul class="slides">
-                    <li data-thumb="img/content/slider/slide-sm-1.jpg">
-                        <img src="img/content/slider/slide-lg-1.jpg" alt="" />
-                    </li>
-                    <li data-thumb="img/content/slider/slide-sm-2.jpg">
-                        <img src="img/content/slider/slide-lg-2.jpg" alt="" />
-                    </li>
-                    <li data-thumb="img/content/slider/slide-sm-3.jpg">
-                        <img src="img/content/slider/slide-lg-3.jpg" alt="" />
-                    </li>
-                    <li data-thumb="img/content/slider/slide-sm-4.jpg">
-                        <img src="img/content/slider/slide-lg-4.jpg" alt="" />
-                    </li>
-                    <li data-thumb="img/content/slider/slide-sm-5.jpg">
-                        <img src="img/content/slider/slide-lg-5.jpg" alt="" />
-                    </li>
-                </ul>
-            </div>
-
-            <div class="slider-text-wrap vertical-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="slider-form col-md-4 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="form-wrap">
-                                <div class="form-appointment">
-                                    <h4>Busca tu inmueble:</h4>
-                                    <form method="post" action="">
-                                        <input type="search" name="" id="" placeholder="Buscar" />
-                                        <select class="" aria-label="">
-                                            <option selected>N° habitaciones</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                          </select>
-                                        <input type="text" name="" id="" placeholder="Presupuesto (S/)" />
-                                        <button class="button-normal yellow text-start">Buscar</button>
-                                    </form>
-                                </div>
-                            </div>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="ubicacion" class="sr-only">Ubicacion</label>
+                            <input type="search" class="form-control" id="ubicacion" placeholder="Ubicación">
                         </div>
+                        <div class="form-group">
+                            <label for="tipoinmueble" class="sr-only">Tipo de Inmueble</label>
+                            <select class="form-control" id="tipoinmueble">
+                                <option value="default">Tipo de Inmueble</option>
+                                <option value="inmueble1">Inmueble1</option>
+                                <option value="inmueble2">Inmueble2</option>
+                                <option value="inmueble3">Inmueble3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="precio" class="sr-only">Precio</label>
+                            <select class="form-control" id="precio">
+                                <option value="default">Precio</option>
+                                <option value="precio1">precio1</option>
+                                <option value="precio2">precio2</option>
+                                <option value="precio3">precio3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dormitorios" class="sr-only">Dormitorios</label>
+                            <select class="form-control" id="dormitorios">
+                                <option value="default">Dormitorios</option>
+                                <option value="2dorm">2 dormitorios</option>
+                                <option value="3dorm">3 dormitorios</option>
+                                <option value="4dorm">4 dormitorios</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="area" class="sr-only">Área total</label>
+                            <select class="form-control" id="area">
+                                <option value="default">Área total</option>
+                                <option value="2dorm">2 dormitorios</option>
+                                <option value="3dorm">3 dormitorios</option>
+                                <option value="4dorm">4 dormitorios</option>
+                            </select>
+                        </div>
+                        <input type="button" id="abrirfiltros" class="abrir-cerrar button-form yellow"
+                            onclick="mostrarfiltros()" value="Más Filtros">
+                    </form>
 
-                        <!-- <div class="col-md-4">
-                            <div class="slider-text wow fadeIn" data-wow-delay="0.5s">
-                                <h2 class="wow fadeInLeft" data-wow-delay="1s">Gapura Villas</h2>
-                                <p class="wow fadeIn" data-wow-delay="1.5s">123, Near Shammer Lake, New York - 10001</p>
-                                <h3 class="wow fadeIn" data-wow-delay="2s">$1,799,000</h3>
-                                <a href="contact.html" class="button-normal yellow wow fadeIn"
-                                    data-wow-delay="2.5s">Schedule a Showing</a>
-                            </div>
-                        </div> -->
-                    </div>
                 </div>
             </div>
         </section>
-        <!-- SLIDER END -->
+        <!-- END BUSCADOR -->
+        <div id="filtros" class="filtros">
+            <div class="cab">
+                <h4>Todos los filtros</h4>
+                <button class="boton-cerrar" onclick="ocultarfiltros()"><i class="fa fa-times"
+                        aria-hidden="true"></i></button>
+            </div>
+            <div class="opciones">
+                <h4>Tipo de proyectos</h4>
+                <div>
+                    <label class="switch">
+                        <input type="checkbox" >
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+            </div>
+
+        </div>
 
         <!-- CONTENT START
             ============================================= -->
         <section id="content" class="homepage clearfix">
 
-            <!-- SECCION 2
-                ============================================= -->
-            
-            <div class="seccion-2">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-md-3 textos">
-                            <h4>TENEMOS EL HOGAR <br>
-                                IDEAL PARA TI
-                            </h4>
-                            <p>Elige el estilo de vida que vaya contigo</p>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card" style="width: 22rem;">
-                                <img class="card-img-top" src="./img/content/gallery/image1.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
-                                  <p class="card-text">Quiero independizarme</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card" style="width: 22rem;">
-                                <img class="card-img-top" src="./img/content/gallery/image1.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
-                                  <p class="card-text">Una nueva aventura</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card" style="width: 22rem;">
-                                <img class="card-img-top" src="./img/content/gallery/image1.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
-                                  <p class="card-text">Vida Tranquila</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card" style="width: 22rem;">
-                                <img class="card-img-top" src="./img/content/gallery/image1.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
-                                  <p class="card-text">Inversión segura</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
+
 
             <!-- <div class="features wrapper clearfix">
                 <div class="container">
@@ -265,67 +230,6 @@
             </div> -->
             <!-- FEATURES END -->
 
-
-            <!-- SECCION 3 -->
-
-            <div class="seccion-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 img-seccion3 p-0">
-                            <img class="img-fluid" src="./img/Rectangle 143.png" alt="">
-                        </div>
-                        <div class="col-md-6 textos-seccion3">
-                            <h2>Este proyecto te va a <br> Enamorar </h2>
-                            <p>¡En Construcción! Este exclusivo proyecto se encuentra en la zona más céntrica de Lima límite con Jesús María, rodeado de áreas verdes y con acceso a las principales vías de la ciudad.</p>
-                            <button class="button-normal yellow">Ver más</button>
-                            <img class="img-fluid" src="./img/Rectangle 148.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FACILITIES START
-                ============================================= -->
-            <!-- <div class="facilities clearfix" style="background-image: url(img/content/facilities/facilities.jpg);">
-
-                <div class="facilities-detail wrapper wow fadeIn">
-                    <div class="title">
-                        <h2>Este proyecto te va <br> Enamorar</h2>
-                    </div>
-
-                    <div class="facilities-content">
-                        <p class="intro">Extensive upgrades and thorough maintenance have kept this home in prime
-                            condition. Hardwood floors and new carpets create a very comfortable living space.</p>
-
-                        <div class="facilities-item">
-                            <h3>Fabulous View</h3>
-                            <p>Lorem ipsum dolor sit amet, begurcya syiute ipsum quia dolor sit amet. consectetur
-                                adipisci velit.</p>
-                        </div>
-
-                        <div class="facilities-item">
-                            <h3>Large Playground</h3>
-                            <p>Lorem ipsum dolor sit amet, begurcya syiute ipsum quia dolor sit amet. consectetur
-                                adipisci velit.</p>
-                        </div>
-
-                        <div class="facilities-item">
-                            <h3>Quiet Neightbourhood</h3>
-                            <p>Lorem ipsum dolor sit amet, begurcya syiute ipsum quia dolor sit amet. consectetur
-                                adipisci velit.</p>
-                        </div>
-
-                        <div class="facilities-item">
-                            <h3>Swimming Pool</h3>
-                            <p>Lorem ipsum dolor sit amet, begurcya syiute ipsum quia dolor sit amet. consectetur
-                                adipisci velit.</p>
-                        </div>
-                    </div>
-
-                    <a href="contact.html" class="button-normal yellow">Contact Agent</a>
-                </div>
-            </div> -->
-            <!-- FACILITIES END -->
             <div class="novedades">
                 <div class="container">
                     <div class="title text-center wow fadeIn" style="margin-top: 40px;">
@@ -405,32 +309,7 @@
                     <div class="title text-center wow fadeIn" style="margin-top: 40px;">
                         <h2><span>Novedades</span></h2>
                     </div>
-                    <!-- <section id="grid" class="grid gridd clearfix">
-                        <div class="nov">
-                            <img src="img/novedades.png">
-                            <div class="texto-contenido">
-                                <h3>NEXOINMOBILIARIO 28 DE MAY...</h3>
-                                <p>Te invitamos a participar de nuestro próximo...</p>
-                                <a href="room-detail.html"><span>ver más</span></a>
-                            </div>
-                        </div>
-                        <div class="nov">
-                            <img src="img/novedades.png">
-                            <div class="texto-contenido">
-                                <h3>NEXOINMOBILIARIO 28 DE MAY...</h3>
-                                <p>Te invitamos a participar de nuestro próximo...</p>
-                                <a href="room-detail.html"><span>ver más</span></a>
-                            </div>
-                        </div>
-                        <div class="nov">
-                            <img src="img/novedades.png">
-                            <div class="texto-contenido">
-                                <h3>NEXOINMOBILIARIO 28 DE MAY...</h3>
-                                <p>Te invitamos a participar de nuestro próximo...</p>
-                                <a href="room-detail.html"><span>ver más</span></a>
-                            </div>
-                        </div>
-                    </section> -->
+
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -491,7 +370,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+
                 </div>
             </div>
             <!-- BANNER MEDIO END -->
@@ -675,60 +554,30 @@
 
         </section>
         <!-- CONTENT END -->
-        <!-- MODAL -->
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg modal-vertical" role="document">
-                <div class="modal-content" style="background-color: #D3D3D3;">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div></div>
-                                <img src="img/novedades.png" style="object-fit: contain;">
-                            </div>
-                            <div class="col-md-6">
-                                <button type="button" class="close" style=" opacity: .9;" data-dismiss="modal"
-                                    aria-label="Close"><i class="bi bi-x" style="color:#fff;"></i></button>
-                                <div class="cont">
-                                    <h3 style="text-transform: uppercase;">Te ayudamos a encontrar tu próximo inmueble
-                                    </h3>
-                                    <p>Suscríbeteyte mantendremos informado sobre los próximos proyectos que
-                                        lleguenaNexo Inmobiliario.</p>
-
-                                    <form method="post">
-                                        <input type="email" placeholder="Ingresa tu email" />
-                                        <input type="button" class="button-normal yellow" value="Continuar">
-                                    </form>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- FOOTER START
             ============================================= -->
-        <footer id="footer" class="wrapper clearfix">
-            <div class="footer-text wow fadeIn text-center">
-                <h1>Want More Information?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                <a href="contact.html" class="button-normal yellow">Contact Agent</a>
-            </div>
+        <footer id="footer" class="container">
+            <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+                <div class="bloquee col-md-5">
+                    <img src="img/logo-asei.png" width="40%">
+                    <p style="margin-left: 10px;"><i class="fa fa-copyright" aria-hidden="true"></i> 2022. Todos los
+                        derechos
+                        reservados.</p>
+                </div>
+                <div class="bloquee col-md-4">
+                    <p><b style="color: #DB9500;">Contáctanos: </b><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        info@nexoinmobiliario.pe</p>
 
-            <div class="footer-copyright wow fadeIn text-center">
-                <div class="container">
-                    <div class="copyright">
-                        <ul class="footer-social">
-                            <li><a href="http://twitter.com"><i class="icon icon-twitter"></i></a></li>
-                            <li><a href="http://facebook.com"><i class="icon icon-facebook"></i></a></li>
-                            <li><a href="http://googleplus.com"><i class="icon icon-googleplus"></i></a></li>
-                            <li><a href="http://skype.com"><i class="icon icon-skype"></i></a></li>
-                            <li><a href="http://dribble.com"><i class="icon icon-dribble"></i></a></li>
-                        </ul>
+                </div>
+                <div class="copyright bloquee col-md-3">
+                    <p><b style="color: #DB9500;">Siguenos en:</b></p>
+                    <ul class="footer-social">
+                        <li><a href="http://facebook.com"><i class="icon icon-facebook"></i></a></li>
+                        <li><a href="http://dribble.com"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="http://twitter.com"><i class="icon icon-twitter"></i></a></li>
+                    </ul>
 
-                        <p>Copyright 2015 Gapura Single Property. All Right Reserved. By Themes Awesome</p>
-                    </div>
                 </div>
             </div>
         </footer>
@@ -741,12 +590,7 @@
         ============================================= -->
     <!-- External -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#myModal').modal('show')
-        })
 
-    </script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
@@ -829,7 +673,26 @@
 
         })();
     </script>
+    <script>
+        function mostrarfiltros() {
+            document.getElementById("filtros").style.width = "300px";
+            document.getElementById("contenido").style.zIndex = "1";
+            document.getElementById("cerrar").style.display = "inline";
+        }
 
+        function ocultarfiltros() {
+            document.getElementById("filtros").style.width = "0";
+            document.getElementById("contenido").style.marginRight = "0";
+            document.getElementById("abrirfiltros").style.display = "inline";
+            document.getElementById("cerrar").style.display = "none";
+        }
+        function overlay() {
+            document.getElementById("contento").classList.toggle("cubierta");
+            document.getElementById("abrirfiltros") = function () {
+                overlay();
+            }
+        }
+    </script>
 </body>
 
 </html>
