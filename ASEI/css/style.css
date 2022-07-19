@@ -1687,7 +1687,7 @@ ul.menus li.has-child ul.child li a:hover:after {
     top:15;
     right: 0;
     z-index: 1 !important;
-    background-color: rgb(195, 106, 106);
+    background-color: #f5f5f5;
     overflow-x: hidden;
     transition: 0.4s;
     padding: 1rem 0;
@@ -1749,54 +1749,77 @@ ul.menus li.has-child ul.child li a:hover:after {
 #cerrar {
     display:none;
 }
-.switch {
+
+
+
+
+  input[type="checkbox"] {
     position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
+    width: 160px;
+    height: 40px;
+    background: #bdc3c7;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    outline: none;
     transition: .4s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;    
+  }
+  input[type="checkbox"]:focus{
+    outline: none;
+  }
+  input:checked[type="checkbox"] {
+    background: #DB9500;
+ 
   }
   
-  .slider:before {
+  input[type="checkbox"]::before {
+    z-index: 2;
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
+    left: 10px;
+    top:5px;
+    width: 65px;
+    height: 30px;
+    background: #fff;
+    border-radius: 15px;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: .4s;
-  }
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }  
-  /* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
+  
   }
   
-  .slider.round:before {
-    border-radius: 50%;
+  input:checked[type="checkbox"]::before {
+    left: 85px;
+   
+  }
+
+  .toggle {
+    position: relative;
+    display: inline;
+  }
+  
+  .texto {
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    pointer-events: none;
+  }
+  
+  .onbtn {
+    bottom: 5px;
+    left: 10px;
+  }
+  
+  .ofbtn {
+    bottom: 5px;
+    right: 10px;
+    color: #34495e;
+  }
+  .bloqueop{
+      border-radius: 15px;
+      border:1px solid #999999;
+      background: #fff;
+      padding: 10px;
   }

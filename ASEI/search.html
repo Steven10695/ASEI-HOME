@@ -170,14 +170,147 @@
             </div>
             <div class="opciones">
                 <h4>Tipo de proyectos</h4>
-                <div>
-                    <label class="switch">
-                        <input type="checkbox" >
-                        <span class="slider round"></span>
-                      </label>
+                <div class="toggle">
+                    <input type="checkbox">
+                    <label for="" class="onbtn texto">Todos</label>
+                    <label for="" class="ofbtn texto">ASEI</label>
                 </div>
-            </div>
+                <h4 style="margin-top: 30px;">Tipo de proyectos</h4>
+                <div class="container-fluid">
+                    <div class="row" style="margin-bottom: 20px;">
+                        <div class="col-md-6">
+                            <div class="bloqueop">
+                                <i class="fa fa-home" style="font-size: 50px;"></i>
+                                <p>Casas</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bloqueop">
+                                <i class="fa fa-building-o" style="font-size: 50px;"></i>
+                                <p>Departamentos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="bloqueop">
+                                <i class="fa fa-desktop" style="font-size: 50px;"></i>
+                                <p>Oficinas</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bloqueop">
+                                <i class="fa fa-map" style="font-size: 50px;"></i>
+                                <p>Lotes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 style="margin-top: 30px;">Departamentos - Fases</h4>
+                <div class="container-fluid">
+                    <p>El area total promedio es de 80 m2</p>
+                    <img src="img/image 2.jpg">
+                    <div class="form-group row" style="margin-top: 20px;">
+                        <div class="col-md-6">
+                            <input type="number" class="form-control" placeholder="Valor mínimo">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" class="form-control" placeholder="Valor máximo">
+                        </div>
+                    </div>
+                </div>
+                <h4 style="margin-top: 30px;">Departamentos - Fases</h4>
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <input class="form-check-input" checked type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Soles(S/)</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Dólares($)</label>
+                    </div>
+                    <div id="soles">
+                        <p>El precio promedio es de S/ 140,000</p>
+                        <img src="img/image 2.jpg">
+                        <div class="form-group row" style="margin-top: 20px;">
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" placeholder="Valor mínimo">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" placeholder="Valor máximo">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dolares">
+                        <p>El precio promedio es de $ 65,000</p>
+                        <img src="img/image 2.jpg">
+                        <div class="form-group row" style="margin-top: 20px;">
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" placeholder="Valor mínimo">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" placeholder="Valor máximo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <h4 style="margin-top: 30px;">Áreas comunes</h4>
+                <div class="container-fluid">
+                    <div class="col-md-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="bbq"
+                            value="zona bbq">
+                        <label class="form-check-label" for="bbq">Zona BBQ</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pet"
+                            value="pet friendly">
+                        <label class="form-check-label" for="pet">Pet Friendly</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="piscina"
+                            value="piscina">
+                        <label class="form-check-label" for="piscina">Piscina</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gym"
+                            value="gimansio">
+                        <label class="form-check-label" for="gym">Gimnasio</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="parques"
+                            value="parques">
+                        <label class="form-check-label" for="parques">Parques</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="juegos"
+                            value="juegos">
+                        <label class="form-check-label" for="juegos">Juegos</label>
+                    </div>
+                    
+                </div>
+
+                <h4 style="margin-top: 30px;">Financiamiento del estado</h4>
+                <div class="">
+                    <div class="col-md-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="terreno"
+                            value="mi terreno">
+                        <label class="form-check-label" for="terreno">Mi terreno</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="techopropio"
+                            value="Techo propio">
+                        <label class="form-check-label" for="techopropio">Techo propio</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="bonoverde"
+                            value="bono verde">
+                        <label class="form-check-label" for="bonoverde">Bono verde</label>
+                    </div>
+                    </div>
+            </div>
         </div>
 
         <!-- CONTENT START
@@ -186,7 +319,7 @@
 
 
 
-            <!-- <div class="features wrapper clearfix">
+            <div class="features wrapper clearfix">
                 <div class="container">
                     <div class="row">
                         <div class="title text-center wow fadeIn">
@@ -227,10 +360,11 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- FEATURES END -->
 
-            <div class="novedades">
+            <!-- PROYECTOS -->
+            <!-- <div class="novedades">
                 <div class="container">
                     <div class="title text-center wow fadeIn" style="margin-top: 40px;">
                         <h2><span>Proyectos</span></h2>
@@ -298,13 +432,13 @@
                     </div>
                     <div class="swiper-pagination2"></div>
                 </div>
-            </div>
+            </div> -->
+            <!-- END PROYECTOS -->
 
-            <!-- BANNER MEDIO -->
-            <div>
-                <img class="banner-medio" src="img/banner-centro.png">
-            </div>
-            <div class="novedades">
+
+
+            <!-- NOVEDADES -->
+            <!-- <div class="novedades">
                 <div class="container">
                     <div class="title text-center wow fadeIn" style="margin-top: 40px;">
                         <h2><span>Novedades</span></h2>
@@ -372,185 +506,11 @@
                     </div>
 
                 </div>
-            </div>
-            <!-- BANNER MEDIO END -->
+            </div> -->
+            <!-- END NOVEDADES -->
 
-            <!-- BLOG -->
-            <div class="blog">
-                <div class="title text-center wow fadeIn" style="margin-top: 40px;">
-                    <h2><span>Ingresos al blog</span></h2>
-                </div>
-                <div class="col-md-5 col-sm-6" style="background-color: #00244F;padding-right: 0;">
-                    <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'General')" id="defaultOpen">General</button>
-                        <button class="tablinks" onclick="openTab(event, 'Experiencia')">Experiencia</button>
-                        <button class="tablinks" onclick="openTab(event, 'Tips')">Tips</button>
-                        <button class="tablinks" onclick="openTab(event, 'Tendencias')">Tendencias</button>
-                        <button class="tablinks" onclick="openTab(event, 'Creditos')">Creditos hipótecatios</button>
-                        <button class="tablinks" onclick="openTab(event, 'Financiamiento')">Financiamiento</button>
-                        <button class="tablinks" onclick="openTab(event, 'Viviendas')">Viviendas ecoamigables</button>
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-6 bloque2">
-                    <div id="General" class="tabcontent row">
-                        <div class="col-md-6">
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/novedades.png">
 
-                        </div>
-                    </div>
-                    <div id="Experiencia" class="tabcontent row">
-                        <div class="col-md-6">
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/logo_nexo_actual.png" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div id="Tips" class="tabcontent row">
-                        <div class="col-md-6">
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/novedades.png">
-                        </div>
-                    </div>
-                    <div id="Tendencias" class="tabcontent row">
-                        <div class="col-md-6">
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/novedades.png">
-                        </div>
-                    </div>
-                    <div id="Creditos" class="tabcontent row">
-                        <div class="col-md-6">
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/novedades.png">
-                        </div>
-                    </div>
-                    <div id="Financiamiento" class="tabcontent row">
-                        <div class="col-md-6">
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/novedades.png">
-                        </div>
-                    </div>
-                    <div id="Viviendas" class="tabcontent row">
-                        <div class="col-md-6">
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                            <div class="publicacion">
-                                <h2>Titulo 1</h2>
-                                <p>Descripcion</p>
-                                <a href="single-post.html"><span>Leer nota</span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/novedades.png">
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-            <!-- BLOG END -->
 
         </section>
         <!-- CONTENT END -->
@@ -675,7 +635,7 @@
     </script>
     <script>
         function mostrarfiltros() {
-            document.getElementById("filtros").style.width = "300px";
+            document.getElementById("filtros").style.width = "450px";
             document.getElementById("contenido").style.zIndex = "1";
             document.getElementById("cerrar").style.display = "inline";
         }
@@ -692,6 +652,19 @@
                 overlay();
             }
         }
+    </script>
+    <script>
+        $(function () {
+            $('#dolares').hide();
+            $("#inlineRadio1").click(function () {
+                $("#soles").show();
+                $("#dolares").hide();
+            });
+            $("#inlineRadio2").click(function () {
+                $("#dolares").show();
+                $("#soles").hide();
+            });
+        });
     </script>
 </body>
 
