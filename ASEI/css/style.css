@@ -1761,8 +1761,8 @@ ul.menus li.has-child ul.child li a:hover:after {
     position: relative !important;
     height: auto;
     width: 0;
-    top:-140px !important;
-    right: 0;
+    top:-143px !important;
+    right: -20px;
     z-index: 2;
     background-color: #f5f5f5;
     overflow-x: hidden;
