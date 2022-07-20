@@ -323,633 +323,1216 @@
 
         <!-- CONTENT START
             ============================================= -->
-        <section id="content" class="homepage clearfix">
+        <section id="content" class="homepage clearfix" style="margin-top: 20px;">
             <div class="container">
+
                 <div class="col-md-6" style="margin: 20px 0px 50px 0px;">
                     <h2><b>RESULTADOS PARA MIRAFLORES, LIMA:</b></h2>
                 </div>
                 <div class="col-md-6">
                     <div class="col-md-6">
                         <div class="switch">
-                          <input type="radio" class="switch-input" name="view" value="week" id="todos" checked>
-                          <label for="todos" class="switch-label switch-label-off">Todos</label>
-                          <input type="radio" class="switch-input" name="view" value="month" id="favoritos">
-                          <label for="favoritos" class="switch-label switch-label-on">Favoritos</label>
-                          <span class="switch-selection"></span>
-                        </div>       
-                    </div>    
+                            <input type="radio" class="switch-input" name="view" value="week" id="todos" checked>
+                            <label for="todos" class="switch-label switch-label-off">Todos</label>
+                            <input type="radio" class="switch-input" name="view" value="month" id="favoritos">
+                            <label for="favoritos" class="switch-label switch-label-on">Favoritos</label>
+                            <span class="switch-selection"></span>
+                        </div>
+                    </div>
                     <div class="col-md-6">
-                        <input type="button" class="button-default" value="Ver mapa">
-                    </div>          
+
+                        <input type="button" id="abrirMapa" class="abrir-cerrarmapa button-default"
+                            onclick="mostrarMapa()" value="Ver mapa">
+                    </div>
                 </div>
             </div>
             <div class="clearfix">
                 <div class="container">
-                    <div id="carrusel2" class="owl-carousel owl-theme">
-                        <div class="slide" data-slide-index="0">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <div class="row">
+                        <div class="map" id="mapita" style="float: right;">
+                            <div id="mapa" class="mapa">
+                                <div class="cabmapa">
+                                    <h4>Todos los filtros</h4>
+                                    <button class="boton-cerrar" onclick="ocultarMapa()"><i class="fa fa-times"
+                                            aria-hidden="true"></i></button>
                                 </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                    </div>
-                                    <a href="#">Contactar</a>
+                                <div>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7801.868887736812!2d-77.043603!3d-12.116638!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1658337091353!5m2!1ses-419!2spe"
+                                        width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
-                        <div class="slide" data-slide-index="1">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
+                        <div id="car1" class="proys">
+                            <div id="carrusel2" class="owl-carousel owl-theme">
+                                <div class="slide" data-slide-index="0">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slide" data-slide-index="2">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
+                                <div class="slide" data-slide-index="1">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slide" data-slide-index="3">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
+                                <div class="slide" data-slide-index="2">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slide" data-slide-index="4">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
+                                <div class="slide" data-slide-index="3">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slide" data-slide-index="5">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
+                                <div class="slide" data-slide-index="4">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slide" data-slide-index="6">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
+                                <div class="slide" data-slide-index="5">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
+                                </div>
+                                <div class="slide" data-slide-index="6">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slide" data-slide-index="7">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide" data-slide-index="8">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide" data-slide-index="9">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide" data-slide-index="10">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide" data-slide-index="11">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide" data-slide-index="12">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="swiper car varias">
+                                                <div class="swiper-wrapper car-wrapper">
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                    <div class="swiper-slide car-slide">
+                                                        <img src="img/Rectangle 143.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="etiqueta">Destacado</p>
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h3>Ubicación</h3>
+                                            <h4>S/ Precio</h4>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-ruler" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bed" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;">Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-bath" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-car" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <i class="icon icon-calendar" style="font-size: 18px;">
+                                                        <span style="font-size:14px !important;"> Dato</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <a href="#">Contactar</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="slide" data-slide-index="7">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- BANNER MEDIO -->
+            <div>
+                <img class="banner-medio" src="img/banner-centro.png">
+            </div>
+            <!-- END BANNER MEDIO -->
+
+
+            <div class="wrapper clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
                             </div>
                         </div>
-                        <div class="slide" data-slide-index="8">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
                             </div>
                         </div>
-                        <div class="slide" data-slide-index="9">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
                             </div>
                         </div>
-                        <div class="slide" data-slide-index="10">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
                             </div>
                         </div>
-                        <div class="slide" data-slide-index="11">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                    </div>
+                    <div class="row" style="margin-top: 40px;">
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
                             </div>
                         </div>
-                        <div class="slide" data-slide-index="12">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/Rectangle 143.png" width="100%">
-                                    <p class="etiqueta">Destacado</p>
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4>Ubicación</h4>
-                                    <p>S/ Precio</p>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <i class="fa fa-home" style="font-size: 20px;"> 
-                                                <span style="font-size:smaller;"> Dato</span>
-                                            </i>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
                                         </div>
                                     </div>
-                                    <a href="#">Contactar</a>
                                 </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="features wrapper clearfix">
+            <!-- BANNER MEDIO2 -->
+            <div>
+                <img class="banner-medio" src="img/banner-centro.png">
+            </div>
+            <!-- END BANNER MEDIO2 -->
+
+
+            <div class="wrapper clearfix">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <div class="swiper car varias">
+                                    <div class="swiper-wrapper car-wrapper">
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                        <div class="swiper-slide car-slide">
+                                            <img src="img/Rectangle 143.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="container-fluid" style="margin-top: 10px;">
+                                <h4>Ubicación</h4>
+                                <h5>S/ precio</h5>
+                                <div class="row">
+                                    <div class="col-md-3" style="border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># m2</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># hab</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px; border-right:1px solid black;">
+                                        <p style="font-size: 12px;"># baños</p>
+                                    </div>
+                                    <div class="col-md-3" style=" padding:3px;">
+                                        <p style="font-size: 12px;">otros</p>
+                                    </div>
+                                </div>
+                                <a href="#">Contactar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="features wrapper clearfix">
                 <div class="container">
                     <div class="row">
                         <div class="title text-center wow fadeIn">
@@ -990,7 +1573,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- FEATURES END -->
 
             <!-- PROYECTOS -->
@@ -1182,53 +1765,114 @@
     <script src="js/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/owlCarousel2Rows.js"></script>
     <script>
+        $(function () {
+            $('#mapita').hide();
 
-        $(document).ready(function () {
+            $("#abrirMapa").click(function () {
+                $("#mapita").show();
+                $(".proys").addClass("col-md-6");
+                $(".map").addClass("col-md-6");
+            });
 
-            var item = $('#carrusel1');
-            var _options1 = {
-                margin: 20,
-                nav: false,
-                dots: true,
-                slideBy: 'page',
-                responsive: {
-                    0: {
-                        items: 1,
-                        rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
-                    },
-                    768: {
-                        items: 1,
-                        rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
-                    },
-                    1500: {
-                        items: 1,
-                        rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
-                    }
-                }
-            };
-
-            var owl2Rows = new Owl2RowsConfig(item, _options1);
-
-            var item2 = $('#carrusel2');
-
-            var owl2Rows2 = new Owl2RowsConfig(item2);
-
-
-
-
+            $(".boton-cerrar").click(function () {
+                $(".proys").removeClass("col-md-6");
+                $(".map").removeClass("col-md-6");
+            });
         });
+
+
+        if ($("#car1").hasClass("col-md-6")) {
+            $(document).ready(function () {
+
+                var item2 = $('#carrusel2');
+                var _options2 = {
+                    margin: 20,
+                    nav: false,
+                    dots: true,
+                    responsiveClass: true,
+                    slideBy: 'page',
+                    responsive: {
+                        0: {
+                            items: 1,
+                            rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                        },
+                        768: {
+                            items: 1,
+                            rows: 3 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                        },
+                        992: {
+                            items: 1,
+                            rows: 3 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                        },
+                        1200: {
+						items:1,
+						rows: 3
+					  }
+                    }
+
+                };
+
+                var objRows2 = new Owl2RowsConfig(item2, _options2);
+
+                // var owl2Rows = new Owl2RowsConfig(item, _options1);
+
+                // var item2 = $('#carrusel2');
+
+                // var owl2Rows2 = new Owl2RowsConfig(item2);
+            });
+        }
+        else {
+            $(document).ready(function () {
+
+                var item3 = $('#carrusel2');
+                var _options3 = {
+                    margin: 20,
+                    nav: false,
+                    dots: true,
+                    responsiveClass: true,
+                    slideBy: 'page',
+                    responsive: {
+                        0: {
+                            items: 1,
+                            rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                        },
+                        768: {
+                            items: 1,
+                            rows: 3 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                        },
+                        992: {
+                            items: 2,
+                            rows: 3 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                        },
+                        1200: {
+						items:2,
+						rows: 3
+					  }
+
+                    }
+
+                };
+
+                var objRows3 = new Owl2RowsConfig(item3, _options3);
+
+                // var owl2Rows = new Owl2RowsConfig(item, _options1);
+
+                // var item2 = $('#carrusel2');
+
+                // var owl2Rows2 = new Owl2RowsConfig(item2);
+            });
+        }
     </script>
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".varias", {
             slidesPerView: 1,
             spaceBetween: 10,
             slidesPerGroup: 3,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-            },
+            autoplay: false,
 
             pagination: {
                 el: ".swiper-pagination",
@@ -1246,9 +1890,9 @@
                     slidesPerGroup: 1
                 },
                 768: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 2,
-                    spaceBetween: 40
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    spaceBetween: 0
                 }
 
             }
@@ -1315,12 +1959,22 @@
             document.getElementById("abrirfiltros").style.display = "inline";
             document.getElementById("cerrar").style.display = "none";
         }
-        function overlay() {
-            document.getElementById("contento").classList.toggle("cubierta");
-            document.getElementById("abrirfiltros") = function () {
-                overlay();
-            }
+
+    </script>
+    <script>
+        function mostrarMapa() {
+            document.getElementById("mapa").style.width = "100%";
+            document.getElementById("contenidomapa").style.zIndex = "1";
+            document.getElementById("cerrarmapa").style.display = "inline";
         }
+
+        function ocultarMapa() {
+            document.getElementById("mapa").style.width = "0";
+            document.getElementById("contenidomapa").style.marginRight = "0";
+            document.getElementById("abrirmapa").style.display = "inline";
+            document.getElementById("cerrarmapa").style.display = "none";
+        }
+
     </script>
     <script>
         $(function () {
@@ -1334,6 +1988,8 @@
                 $("#soles").hide();
             });
         });
+
+        
     </script>
 </body>
 

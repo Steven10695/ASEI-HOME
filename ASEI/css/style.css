@@ -1619,6 +1619,7 @@ ul.menus li.has-child ul.child li a:hover:after {
     background: #fff;
     border-radius: 20px;
     transition: 1s;
+
     -webkit-box-shadow: 10px 10px 42px -16px rgba(0, 0, 0, 0.41);
     -moz-box-shadow: 10px 10px 32px -16px rgba(0, 0, 0, 0.41);
     box-shadow: 10px 10px 42px -16px rgba(0, 0, 0, 0.41);
@@ -1634,6 +1635,7 @@ ul.menus li.has-child ul.child li a:hover:after {
     object-fit: contain;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    z-index: 0 !important;
 }
 .cont{
    margin-right: 10%;
@@ -1753,6 +1755,77 @@ ul.menus li.has-child ul.child li a:hover:after {
 
 
 
+
+
+.mapa {
+    position: relative !important;
+    height: auto;
+    width: 0;
+    top:-140px !important;
+    right: 0;
+    z-index: 2;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    float: right !important;
+    opacity: 1;
+}
+
+.mapa .boton-cerrar {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 5px;
+    line-height: 1.5rem;
+    
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+    border-radius: 50%;
+    background-color: #999999;
+}
+
+
+.cubierta{
+    background-color: #000 !important;
+}
+.mapa a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+   
+
+}
+
+.mapa a:hover {
+    color: #fff;
+    background-color: #f90;
+
+}
+
+.cabmapa{
+    text-align: center;
+    padding-top: 15px;
+    border-bottom: 1px solid black;
+}
+
+
+#abrirmapa {
+    
+}
+#cerrarmapa {
+    display:none;
+}
+
+
+
   input[type="checkbox"] {
     position: relative;
     width: 160px;
@@ -1841,6 +1914,7 @@ ul.menus li.has-child ul.child li a:hover:after {
     margin: 20px 0px 50px 0px;
     height: 36px;
     width: 200px;
+    
     background: #ffffff40;
     border-radius: 15px;
     box-shadow: 0px 5px 5px rgba(105, 105, 105, 0.418);
@@ -1848,7 +1922,7 @@ ul.menus li.has-child ul.child li a:hover:after {
   
   .switch-label {
     position: relative;
-    z-index: 2;
+    z-index: 1 !important;
     float: left;
     width: 48%;
     height: 30px;
@@ -1978,7 +2052,8 @@ ul.menus li.has-child ul.child li a:hover:after {
 
 .owl-carousel .owl-item img {
     display: block !important;
-    width: 100% !important
+    width: 100% !important;
+    z-index: 0 !important;
 }
 
 .owl-carousel .owl-dots.disabled,
@@ -2057,7 +2132,7 @@ ul.menus li.has-child ul.child li a:hover:after {
 }
 
 .owl-carousel .owl-animated-out {
-    z-index: 1 !important
+    z-index: 0 !important
 }
 
 .owl-carousel .fadeOut {
@@ -2093,7 +2168,7 @@ ul.menus li.has-child ul.child li a:hover:after {
     margin-top: -40px !important;
     background: url(owl.video.play.png) no-repeat;
     cursor: pointer;
-    z-index: 1;
+    z-index: 0 !important;
     -webkit-backface-visibility: hidden !important;
     transition: transform .1s ease !important
 }
@@ -2119,7 +2194,7 @@ ul.menus li.has-child ul.child li a:hover:after {
 
 .owl-carousel .owl-video-frame {
     position: relative !important;
-    z-index: 1 !important;
+    z-index: 0 !important;
     height: 100% !important;
     width: 100% !important
 }
@@ -2177,7 +2252,7 @@ ul.menus li.has-child ul.child li a:hover:after {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #869791 !important
+    background: #ffc815 !important
 }
 .col-md-5 img{
     border-radius: 10px;
@@ -2209,4 +2284,28 @@ ul.menus li.has-child ul.child li a:hover:after {
     background: #fff;
     margin: 20px 0px 50px 0px;
     box-shadow: 0px 5px 5px rgba(105, 105, 105, 0.418);
+}
+
+.car {
+    padding: 0 !important;
+    z-index: 0 !important;
+}
+
+.car-slide {
+    
+    background: #fff !important;
+    border-radius: 20px !important;
+    transition: 1s;
+    /* Center slide text vertically */
+    
+}
+.car-wrapper{
+    grid-auto-flow: column;
+    display: grid;
+}
+.car-slide img {
+    width: 100%;
+    object-fit: contain;
+    z-index: 0 !important;
+    border-radius: 20px !important;
 }

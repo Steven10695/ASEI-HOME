@@ -10,6 +10,7 @@ Owl2RowsConfig = function (item, _options) {
 					margin: 20,
 					nav: false,
 					dots: true,
+					responsiveClass:true,
 					slideBy: 'page',
 					responsive: {
 					  0: {
@@ -17,14 +18,20 @@ Owl2RowsConfig = function (item, _options) {
 						rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
 					  },
 					  768: {
-						items: 2,
+						items: 1,
 						rows: 3 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
 					  },
+					  1200: {
+						items:2,
+						rows: 3
+					  },
 					  991: {
-						items: 2,
+						items:1,
 						rows: 3 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
 					  }
+					  
 					}
+		
 				  };
 				  
 	//Seteamos las opciones si es que se las pasan como parametro al crear el objeto
@@ -49,12 +56,15 @@ Owl2RowsConfig = function (item, _options) {
 		//Se calcula el tamaño del viewport igual que lo hace Owl Carousel
 		var viewport = function() {
 			var width;
-			if (carouselOptions.responsiveBaseElement && carouselOptions.responsiveBaseElement !== window) {
-			  width = $(carouselOptions.responsiveBaseElement).width();
+			if (carouselOptions.responsiveBaseElement && carouselOptions.responsiveBaseElement !== width) {
+			  width = $(carouselOptions.responsiveBaseElement).width('30px');
 			} else if (window.innerWidth) {
 			  width = window.innerWidth;
 			} else if (document.documentElement && document.documentElement.clientWidth) {
 			  width = document.documentElement.clientWidth;
+			} else if (document.documentElement && document.documentElement.clientWidth) {
+				width = document.documentElement.clientWidth;
+			
 			} else {
 			  console.warn('Can not detect viewport width.');
 			}
