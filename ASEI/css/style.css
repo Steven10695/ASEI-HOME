@@ -2310,7 +2310,10 @@ ul.menus li.has-child ul.child li a:hover:after {
     border-radius: 20px !important;
 }
 
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 450px){
+    footer{
+        display: none;
+    }
     .menu-mobile{
         padding: 10px 0px;
         position: fixed;

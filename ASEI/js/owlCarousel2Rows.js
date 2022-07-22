@@ -18,7 +18,7 @@ Owl2RowsConfig = function (item, _options) {
 						rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
 					  },
 					  768: {
-						items: 1,
+						items: 2,
 						rows: 3 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
 					  },
 					  1200: {
@@ -26,7 +26,7 @@ Owl2RowsConfig = function (item, _options) {
 						rows: 3
 					  },
 					  991: {
-						items:1,
+						items:2,
 						rows: 3 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
 					  }
 					  
