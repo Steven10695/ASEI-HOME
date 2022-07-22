@@ -2268,7 +2268,7 @@ ul.menus li.has-child ul.child li a:hover:after {
     padding: 5px 10px;
     /* transform: translate(-50%, -50%); */
 }
-.fa-heart-o{
+.corazon{
     font-size: 24px !important;
     color: white;
     position: absolute;
@@ -2308,4 +2308,189 @@ ul.menus li.has-child ul.child li a:hover:after {
     object-fit: contain;
     z-index: 0 !important;
     border-radius: 20px !important;
+}
+
+@media only screen and (max-width: 370px){
+    .menu-mobile{
+        padding: 10px 0px;
+        position: fixed;
+        float: center;
+        bottom: 0;
+        z-index: 5;
+        width: 100%;
+        background: #fff !important;
+    }
+    .bot-menu{
+        background: none;
+        border: none;
+    }
+    .fil{
+        font-size: 28px !important;
+        color:black;
+    }
+    .bloque-desk, .busc-desk {
+      display: none;
+    }
+    .contenedor-mobile{
+        display: block !important;
+    }
+    .busc-mobile{
+        display:block !important;
+        margin-top:35%!important;
+    }
+    .btn-mobile{
+        display: block !important;
+    }
+
+    .mapamob {
+        position: fixed !important;
+        height: 100%;
+        width: 0;
+        top:130px !important;
+        
+        z-index: 2;
+        background-color: #f5f5f5;
+        overflow-x: hidden;
+        transition: 0.4s;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        float: right !important;
+        opacity: 1;
+    }
+    
+    .mapamob .boton-cerrarmob {
+        position: absolute !important;
+        top: 1.5rem;
+        right: 1rem;
+        font-size: 2rem;
+        display: block;
+        padding: 5px;
+        line-height: 1.5rem;
+        
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        vertical-align: top;
+        border: none;
+        border-radius: 50%;
+        background-color: #999999;
+    }
+    
+    
+    .cubierta{
+        background-color: #000 !important;
+    }
+    .mapamob a {
+        display: block;
+        font-size: 120%;
+        color: #eee;
+        text-decoration: none;
+       
+    
+    }
+    
+    .mapamob a:hover {
+        color: #fff;
+        background-color: #f90;
+    
+    }
+    
+    .cabmapamob{
+        text-align: center;
+        padding-top: 15px;
+        border-bottom: 1px solid black;
+    }
+    
+    
+    #abrirmapamob {
+        
+    }
+    #cerrarmapamob {
+        display:none;
+    }
+
+    .filtrosmob {
+        position: absolute;
+        height: 100%;
+        width: 0;
+        top:15;
+        right: 0;
+        z-index: 4 !important;
+        background-color: #f5f5f5;
+        overflow-x: hidden;
+        transition: 0.4s;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        float: right !important;
+        opacity: 1;
+    }
+    
+    .filtrosmob .boton-cerrarmob {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        font-size: 2rem;
+        display: block;
+        padding: 5px;
+        line-height: 1.5rem;
+        
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        vertical-align: top;
+        border: none;
+        border-radius: 50%;
+        background-color: #999999;
+    }
+    
+    
+    .cubierta{
+        background-color: #000 !important;
+    }
+    .filtrosmob a {
+        display: block;
+        font-size: 120%;
+        color: #eee;
+        text-decoration: none;
+       
+    
+    }
+    
+    .filtrosmob a:hover {
+        color: #fff;
+        background-color: #f90;
+    
+    }
+    
+    .cabmob{
+        text-align: center;
+        padding-top: 15px;
+        border-bottom: 1px solid black;
+    }
+    .opcionesmob{
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    #abrirmob {
+        
+    }
+    #cerrarmob {
+        display:none;
+    }
+  }
+
+  @media only screen and (max-width: 1370px){
+         .contenedor-mobile{
+        display: none;
+    }
+    .busc-mobile{
+        display: none;
+    }
+    .btn-mobile{
+        display: none;
+    }
+.mapa1{
+    display: none;
+}
 }
