@@ -52,7 +52,7 @@
             <div class="header-navigation">
                 <div class="container">
                     <div class="row">
-                        <div class="logo wow fadeInDown col-md-3" data-wow-delay="1s">
+                        <div class="logo wow fadeInDown col-md-3 col-xs-5" data-wow-delay="1s">
                             <div class="logo-image">
                                 <a href="index.html"><img src="img/logo_nexo_actual.png" alt=""></a>
                             </div>
@@ -60,7 +60,7 @@
 
                         <!-- MOBILE MENU START
                             ============================================= -->
-                        <div class="mobile-menu wow fadeInDown" data-wow-delay="1s">
+                        <div class="mobile-menu wow fadeInDown col-xs-3" data-wow-delay="1s">
                             <button id="slide-buttons" class="icon icon-navicon-round"></button>
                         </div>
 
@@ -98,7 +98,7 @@
                             </nav>
                         </div>
 
-                        <div class="wow fadeInDown col-md-2 col-xs-3" data-wow-delay="1s">
+                        <div class="wow fadeInDown col-md-2 col-xs-4" data-wow-delay="1s">
                             <div class="boton-encabezado text-center">
                                 <button type="button" class="btn btn-header">Buscar</button>
                             </div>
@@ -108,7 +108,8 @@
             </div>
         </header>
         <!-- HEADER END -->
-        <!-- BUSCADOR -->
+
+        <!-- BUSCADOR DESK -->
         <section class="buscador busc-desk">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -161,6 +162,8 @@
                 </div>
             </div>
         </section>
+        <!-- END BUSCADOR DESK -->
+
         <div id="filtros" class="filtros">
             <div class="cab">
                 <h4>Todos los filtros</h4>
@@ -221,8 +224,8 @@
                 <h4 style="margin-top: 30px;">Departamentos - Fases</h4>
                 <div class="container-fluid">
                     <div class="col-md-6">
-                        <input class="form-check-input" checked type="radio" name="inlineRadioOptions"
-                            id="inlineRadio1" value="option1">
+                        <input class="form-check-input" checked type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
                         <label class="form-check-label" for="inlineRadio1">Soles(S/)</label>
                     </div>
                     <div class="col-md-6">
@@ -320,35 +323,35 @@
             </div>
 
         </div>
-        <div class="busc-mobile" >
-            
-                <div class="menu-mobile" align="center">
-                    <div class="row">
-                        <div class="col-xs-3">
-                    <button class="bot-menu">
-                        <i class="fa fa-home fil" aria-hidden="true"></i>
-                        <span>Inicio</span>
-                    </button>
+        <!-- MENU FOOTER MOBILE -->
+        <div class="busc-mobile">
+            <div class="menu-mobile" align="center">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <button class="bot-menu">
+                            <i class="fa fa-home fil" aria-hidden="true"></i>
+                            <span>Inicio</span>
+                        </button>
                     </div>
                     <div class="col-xs-3">
-                    <button class="bot-menu">
-                        <i class="fa fa-heart-o fil" aria-hidden="true"></i>
-                        <span>Guardados</span>
-                    </button>
+                        <button class="bot-menu">
+                            <i class="fa fa-heart-o fil" aria-hidden="true"></i>
+                            <span>Guardados</span>
+                        </button>
                     </div>
                     <div class="col-xs-3">
-                    <button id="abrirfiltrosmob" class="abrir-cerrar1 bot-menu"
-                        onclick="mostrarfiltrosmob()" value="filtros">
-                        <i class="fa fa-sliders fil" aria-hidden="true"></i>
-                        <span>Filtros</span>
-                    </button>
+                        <button id="abrirfiltrosmob" class="abrir-cerrar1 bot-menu" onclick="mostrarfiltrosmob()"
+                            value="filtros">
+                            <i class="fa fa-sliders fil" aria-hidden="true"></i>
+                            <span>Filtros</span>
+                        </button>
                     </div>
                     <div class="col-xs-3">
-                    <button id="abrirMapamob" class="abrir-cerrarmapa bot-menu"
-                        onclick="mostrarMapamob()" value="mapa">
-                        <i class="fa fa-map-o fil" aria-hidden="true"></i>
-                        <p>Ver mapa</p>
-                    </button>
+                        <button id="abrirMapamob" class="abrir-cerrarmapa bot-menu" onclick="mostrarMapamob()"
+                            value="mapa">
+                            <i class="fa fa-map-o fil" aria-hidden="true"></i>
+                            <p>Ver mapa</p>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -372,13 +375,13 @@
                     <h4 style="margin-top: 30px;">Tipo de proyectos</h4>
                     <div class="container-fluid">
                         <div class="row" style="margin-bottom: 20px;">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-xs-6">
                                 <div class="bloqueop">
                                     <i class="fa fa-home" style="font-size: 50px;"></i>
                                     <p>Casas</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-xs-6">
                                 <div class="bloqueop">
                                     <i class="fa fa-building-o" style="font-size: 50px;"></i>
                                     <p>Departamentos</p>
@@ -386,13 +389,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-xs-6">
                                 <div class="bloqueop">
                                     <i class="fa fa-desktop" style="font-size: 50px;"></i>
                                     <p>Oficinas</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-xs-6">
                                 <div class="bloqueop">
                                     <i class="fa fa-map" style="font-size: 50px;"></i>
                                     <p>Lotes</p>
@@ -400,51 +403,51 @@
                             </div>
                         </div>
                     </div>
-                    <h4 style="margin-top: 30px;">Departamentos - Fases</h4>
+                    <h4 style="margin-top: 30px;">Área total (m2)</h4>
                     <div class="container-fluid">
                         <p>El area total promedio es de 80 m2</p>
                         <img src="img/image 2.jpg">
                         <div class="form-group row" style="margin-top: 20px;">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-xs-6">
                                 <input type="number" class="form-control" placeholder="Valor mínimo">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-xs-6">
                                 <input type="number" class="form-control" placeholder="Valor máximo">
                             </div>
                         </div>
                     </div>
-                    <h4 style="margin-top: 30px;">Departamentos - Fases</h4>
+                    <h4 style="margin-top: 30px;">Rango de precios</h4>
                     <div class="container-fluid">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-6">
                             <input class="form-check-input" checked type="radio" name="inlineRadioOptions"
-                                id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Soles(S/)</label>
+                                id="solesmobile" value="option1">
+                            <label class="form-check-label" for="solesmobile">Soles(S/)</label>
                         </div>
-                        <div class="col-md-6">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        <div class="col-md-6 col-xs-6">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dolaresmobile"
                                 value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Dólares($)</label>
+                            <label class="form-check-label" for="dolaresmobile">Dólares($)</label>
                         </div>
-                        <div id="soles">
+                        <div id="solesmob">
                             <p>El precio promedio es de S/ 140,000</p>
                             <img src="img/image 2.jpg">
                             <div class="form-group row" style="margin-top: 20px;">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-6">
                                     <input type="number" class="form-control" placeholder="Valor mínimo">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-6">
                                     <input type="number" class="form-control" placeholder="Valor máximo">
                                 </div>
                             </div>
                         </div>
-                        <div id="dolares">
+                        <div id="dolaresmob">
                             <p>El precio promedio es de $ 65,000</p>
                             <img src="img/image 2.jpg">
                             <div class="form-group row" style="margin-top: 20px;">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-6">
                                     <input type="number" class="form-control" placeholder="Valor mínimo">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-6">
                                     <input type="number" class="form-control" placeholder="Valor máximo">
                                 </div>
                             </div>
@@ -453,62 +456,97 @@
 
                     <h4 style="margin-top: 30px;">Áreas comunes</h4>
                     <div class="container-fluid">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="bbq"
                                 value="zona bbq">
-                            <label class="form-check-label" for="bbq">Zona BBQ</label>
+                            <span class="form-check-label" for="bbq">Zona BBQ</span>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pet"
                                 value="pet friendly">
-                            <label class="form-check-label" for="pet">Pet Friendly</label>
+                            <span class="form-check-label" for="pet">Pet Friendly</span>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="piscina"
                                 value="piscina">
-                            <label class="form-check-label" for="piscina">Piscina</label>
+                            <span class="form-check-label" for="piscina">Piscina</span>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gym"
                                 value="gimansio">
-                            <label class="form-check-label" for="gym">Gimnasio</label>
+                            <span class="form-check-label" for="gym">Gimnasio</span>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="parques"
                                 value="parques">
-                            <label class="form-check-label" for="parques">Parques</label>
+                            <span class="form-check-label" for="parques">Parques</span>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="juegos"
                                 value="juegos">
-                            <label class="form-check-label" for="juegos">Juegos</label>
+                            <span class="form-check-label" for="juegos">Juegos</span>
+                        </div>
+
+                    </div>
+
+                    <h4 style="margin-top: 30px;">Entidad financiera</h4>
+                    <div class="container-fluid">
+                        <div class="col-md-4 col-xs-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="bbva"
+                                value="bbva">
+                            <span class="form-check-label" for="bbva">BBVA</span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="bcp"
+                                value="bcp">
+                            <span class="form-check-label" for="bcp">BCP</span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="interbank"
+                                value="interbank">
+                            <span class="form-check-label" for="interbank">Interbank</span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="scotiabank"
+                                value="scotiabank">
+                            <span class="form-check-label" for="scotiabank">Scotiabank</span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pichincha"
+                                value="pichincha">
+                            <span class="form-check-label" for="pichincha">Pichincha</span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mibanco"
+                                value="mibanco">
+                            <span class="form-check-label" for="mibanco">Mi banco</span>
                         </div>
 
                     </div>
 
                     <h4 style="margin-top: 30px;">Financiamiento del estado</h4>
                     <div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="terreno"
                                 value="mi terreno">
-                            <label class="form-check-label" for="terreno">Mi terreno</label>
+                            <span class="form-check-label" for="terreno">Mi terreno</span>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="techopropio"
                                 value="Techo propio">
-                            <label class="form-check-label" for="techopropio">Techo propio</label>
+                            <span class="form-check-label" for="techopropio">Techo propio</span>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="bonoverde"
                                 value="bono verde">
-                            <label class="form-check-label" for="bonoverde">Bono verde</label>
+                            <span class="form-check-label" for="bonoverde">Bono verde</span>
                         </div>
                     </div>
                     <div class="container-fluid">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-6">
                             <input type="button" class="button-normal" value="Limpiar">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-6">
                             <input type="button" class="button-form yellow" value="Aplicar">
                         </div>
                     </div>
@@ -536,7 +574,7 @@
             </div>
             <!-- END MOSTRAR MAPA -->
         </div>
-
+        <!-- END FOOTER MOBILE -->
         <!-- CONTENT START
             ============================================= -->
         <section id="content" class="homepage clearfix" style="margin-top: 20px;">
@@ -1261,6 +1299,8 @@
                     </div>
                 </div>
             </div>
+            <!-- END CONTENIDO MOBILE  -->
+            <!-- CONTENIDO ESCRITORIO -->
             <div class="bloque-desk">
                 <div class="container ">
                     <div class="col-md-6" style="margin: 20px 0px 50px 0px;">
@@ -2465,6 +2505,7 @@
                     </div>
                 </div>
             </div>
+            <!-- END CONTENIDO ESCRITORIO -->
         </section>
         <!-- CONTENT END -->
 
@@ -2504,7 +2545,7 @@
     <!-- External -->
     <script src="js/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/owlCarousel2Rows.js"></script>
-   
+
     <script>
         $(function () {
             $('#mapitamob').hide();
@@ -2566,7 +2607,7 @@
             });
         });
 
-        
+
 
 
         if ($("#car1").hasClass("col-md-6")) {
@@ -2747,12 +2788,12 @@
             document.getElementById("abrirfiltros").style.display = "inline";
             document.getElementById("cerrar").style.display = "none";
         }
-        
+
     </script>
     <script>
-        
 
-        
+
+
         function mostrarMapa() {
             document.getElementById("mapa").style.width = "100%";
             document.getElementById("contenidomapa").style.zIndex = "1";
@@ -2766,7 +2807,7 @@
             document.getElementById("cerrarmapa").style.display = "none";
         }
 
-        
+
 
 
     </script>
@@ -2783,6 +2824,17 @@
             });
         });
 
+        $(function () {
+            $('#dolaresmob').hide();
+            $("#solesmobile").click(function () {
+                $("#solesmob").show();
+                $("#dolaresmob").hide();
+            });
+            $("#dolaresmobile").click(function () {
+                $("#dolaresmob").show();
+                $("#solesmob").hide();
+            });
+        });
 
     </script>
 </body>
