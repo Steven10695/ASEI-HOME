@@ -2413,6 +2413,7 @@ ul.menus li.has-child ul.child li a:hover:after {
     }
 
     .filtrosmob {
+        display: block !important;
         position: absolute;
         height: 100%;
         width: 0;
