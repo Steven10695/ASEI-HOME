@@ -2497,3 +2497,9 @@ ul.menus li.has-child ul.child li a:hover:after {
     display: none;
 }
 }
+.filtrosmob{
+    display: none;
+}
+.busc-mobile, .contenedor-mobile{
+    display: none;
+}
